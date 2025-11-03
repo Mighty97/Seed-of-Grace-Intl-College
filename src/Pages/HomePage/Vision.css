@@ -1,0 +1,392 @@
+
+        .three-column-section {
+          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+          padding: 5rem 2rem;
+        }
+
+        .section-container {
+          max-width: 1400px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2.5rem;
+        }
+
+        /* Column Base Styles */
+        .column {
+          background: #ffffff;
+          border-radius: 20px;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+          overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .column:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Mission & Vision Flipping Card */
+        .flip-container {
+          perspective: 1000px;
+          height: 100%;
+          min-height: 450px;
+          cursor: pointer;
+        }
+
+        .flip-card {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+        }
+
+        .flip-card.flipped {
+          transform: rotateY(180deg);
+        }
+
+        .flip-side {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 20px;
+          padding: 2.5rem;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .flip-front {
+          background: linear-gradient(135deg, #0a1628 0%, #1a2942 100%);
+          color: #ffffff;
+        }
+
+        .flip-back {
+          background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+          color: #0a1628;
+          transform: rotateY(180deg);
+        }
+
+        .flip-icon {
+          font-size: 3.5rem;
+          margin-bottom: 1.5rem;
+          display: block;
+        }
+
+        .flip-title {
+          font-size: 2rem;
+          font-weight: 800;
+          margin-bottom: 1.5rem;
+          letter-spacing: 1px;
+        }
+
+        .flip-content {
+          font-size: 1rem;
+          line-height: 1.8;
+          flex: 1;
+        }
+
+        .flip-indicator {
+          margin-top: auto;
+          padding-top: 1.5rem;
+          text-align: center;
+          font-size: 0.85rem;
+          opacity: 0.8;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        .flip-arrow {
+          font-size: 1.2rem;
+          animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+          0%, 100% { transform: translateX(0); }
+          50% { transform: translateX(5px); }
+        }
+
+        /* Goal Column */
+        .goal-column {
+          background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+          padding: 2.5rem;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .goal-column::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 5px;
+          background: linear-gradient(90deg, #d4af37 0%, #f4d03f 100%);
+        }
+
+        .goal-icon {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+          display: block;
+        }
+
+        .goal-title {
+          font-size: 2rem;
+          font-weight: 800;
+          color: #0a1628;
+          margin-bottom: 1.5rem;
+          position: relative;
+          padding-bottom: 1rem;
+        }
+
+        .goal-title::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 60px;
+          height: 4px;
+          background: linear-gradient(90deg, #d4af37 0%, #f4d03f 100%);
+          border-radius: 2px;
+        }
+
+        .goal-list {
+          list-style: none;
+          padding: 0;
+        }
+
+        .goal-item {
+          padding: 1rem 0;
+          padding-left: 2.5rem;
+          position: relative;
+          color: #555;
+          font-size: 0.95rem;
+          line-height: 1.7;
+          border-bottom: 1px solid #f0f0f0;
+        }
+
+        .goal-item:last-child {
+          border-bottom: none;
+        }
+
+        .goal-item::before {
+          content: '🎯';
+          position: absolute;
+          left: 0;
+          top: 1rem;
+          font-size: 1.2rem;
+        }
+
+        .goal-item:nth-child(2)::before { content: '📚'; }
+        .goal-item:nth-child(3)::before { content: '🌟'; }
+        .goal-item:nth-child(4)::before { content: '🤝'; }
+        .goal-item:nth-child(5)::before { content: '💡'; }
+
+        /* Student of the Week Column */
+        .student-column {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .student-image-wrapper {
+          width: 100%;
+          height: 280px;
+          background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .student-image-wrapper::before {
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
+          background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.1) 10px,
+            rgba(255, 255, 255, 0.1) 20px
+          );
+          animation: moveStripes 20s linear infinite;
+        }
+
+        @keyframes moveStripes {
+          0% { transform: translate(0, 0); }
+          100% { transform: translate(50px, 50px); }
+        }
+
+        .student-image {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 5rem;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          position: relative;
+          z-index: 1;
+        }
+
+        .student-badge {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background: #0a1628;
+          color: #d4af37;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+        }
+
+        .student-info {
+          padding: 2rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .student-label {
+          color: #d4af37;
+          font-size: 0.85rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 0.5rem;
+        }
+
+        .student-name {
+          font-size: 1.8rem;
+          font-weight: 800;
+          color: #0a1628;
+          margin-bottom: 0.3rem;
+        }
+
+        .student-class {
+          color: #666;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 1.5rem;
+          padding-bottom: 1rem;
+          border-bottom: 2px solid #f0f0f0;
+        }
+
+        .student-description {
+          color: #555;
+          font-size: 0.95rem;
+          line-height: 1.8;
+          flex: 1;
+        }
+
+        .student-achievements {
+          margin-top: 1.5rem;
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .achievement-badge {
+          background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+          color: #0a1628;
+          padding: 0.4rem 0.8rem;
+          border-radius: 15px;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+          .section-container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .flip-container {
+            min-height: 400px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .three-column-section {
+            padding: 3rem 1rem;
+          }
+
+          .flip-side,
+          .goal-column {
+            padding: 2rem;
+          }
+
+          .flip-title,
+          .goal-title {
+            font-size: 1.6rem;
+          }
+
+          .flip-icon,
+          .goal-icon {
+            font-size: 2.5rem;
+          }
+
+          .student-image-wrapper {
+            height: 250px;
+          }
+
+          .student-image {
+            width: 130px;
+            height: 130px;
+            font-size: 4rem;
+          }
+
+          .student-name {
+            font-size: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .flip-side,
+          .goal-column,
+          .student-info {
+            padding: 1.5rem;
+          }
+
+          .flip-title,
+          .goal-title {
+            font-size: 1.4rem;
+          }
+
+          .flip-content,
+          .goal-item,
+          .student-description {
+            font-size: 0.9rem;
+          }
+
+          .student-image-wrapper {
+            height: 220px;
+          }
+
+          .student-image {
+            width: 110px;
+            height: 110px;
+            font-size: 3.5rem;
+          }
+
+          .student-name {
+            font-size: 1.3rem;
+          }
+        }
+

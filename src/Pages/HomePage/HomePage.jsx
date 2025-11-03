@@ -2,6 +2,8 @@ import { Header } from "../../Components/Header";
 import { Carousel } from "./Carousel";
 import { Typewriter } from "../../Components/Typewriter";
 import { Principal } from "./Principal";
+import { Vision } from "./Vision";
+import { Staff } from "./Staff";
 
 export function HomePage() {
   return (
@@ -10,6 +12,8 @@ export function HomePage() {
       <Carousel />
       <Typewriter />
       <Principal />
+      <Vision />
+      <Staff />
     </>
   )
 }
