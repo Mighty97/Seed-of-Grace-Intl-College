@@ -6,6 +6,7 @@ import { Vision } from "./Vision";
 import { Staff } from "./Staff";
 import { AwardT } from "./Award";
 import { Video } from './Video'
+import { ScrollToTop } from "../../Components/ScrollToTop";
 
 export function HomePage() {
   return (
@@ -18,6 +19,7 @@ export function HomePage() {
       <Staff />
       <AwardT />
       <Video />
+      <ScrollToTop />
     </>
   )
 }
