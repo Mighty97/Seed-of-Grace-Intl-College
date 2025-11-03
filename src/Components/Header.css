@@ -1,9 +1,4 @@
 
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
 
         .header {
           background: linear-gradient(135deg, #0a1628 0%, #1a2942 50%, #0a1628 100%);
