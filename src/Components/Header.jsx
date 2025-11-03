@@ -40,7 +40,7 @@ export function Header() {
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
-            { isMobileMenuOpen ? '✕' : '☰'}
+            {isMobileMenuOpen ? '✕' : '☰' }
           </button>
 
           <nav className={`nav-container ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -116,5 +116,5 @@ export function Header() {
         </div>
       </header>
     </>
-  )
-}
+  );
+};
