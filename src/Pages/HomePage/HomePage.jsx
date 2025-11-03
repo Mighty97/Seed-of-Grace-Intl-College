@@ -4,6 +4,7 @@ import { Typewriter } from "../../Components/Typewriter";
 import { Principal } from "./Principal";
 import { Vision } from "./Vision";
 import { Staff } from "./Staff";
+import { AwardT } from "./Award";
 
 export function HomePage() {
   return (
@@ -14,6 +15,7 @@ export function HomePage() {
       <Principal />
       <Vision />
       <Staff />
+      <AwardT />
     </>
   )
 }
