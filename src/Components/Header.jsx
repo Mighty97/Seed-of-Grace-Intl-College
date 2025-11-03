@@ -29,7 +29,10 @@ export function Header() {
         <div className="header-container">
           <div className="logo-section">
             <img className="logo" src="/images/logo.png" alt="" />
+            <div className='brand-info' >
             <span className="brand-name">Seed of Grace</span>
+            <span className="brand-tagline">International College</span>
+            </div>
           </div>
 
           <button 
