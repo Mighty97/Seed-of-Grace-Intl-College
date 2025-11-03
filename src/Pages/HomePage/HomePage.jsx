@@ -5,6 +5,7 @@ import { Principal } from "./Principal";
 import { Vision } from "./Vision";
 import { Staff } from "./Staff";
 import { AwardT } from "./Award";
+import { Video } from './Video'
 
 export function HomePage() {
   return (
@@ -16,6 +17,7 @@ export function HomePage() {
       <Vision />
       <Staff />
       <AwardT />
+      <Video />
     </>
   )
 }
