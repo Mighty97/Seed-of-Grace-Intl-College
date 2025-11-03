@@ -25,8 +25,6 @@ export function Header() {
 
   return (
     <>
-      
-
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo-section">
@@ -39,7 +37,7 @@ export function Header() {
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? '✕' : '☰'}
+            { isMobileMenuOpen ? '✕' : '☰'}
           </button>
 
           <nav className={`nav-container ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -114,17 +112,6 @@ export function Header() {
           </nav>
         </div>
       </header>
-
-      <div style={{ padding: '2rem', background: '#f5f5f5', minHeight: '100vh' }}>
-        <h1 style={{ textAlign: 'center', color: '#0a1628', marginBottom: '2rem' }}>Welcome to Elite School</h1>
-        <p style={{ textAlign: 'center', color: '#666', maxWidth: '800px', margin: '0 auto' }}>
-          This is a demo content area. The header above features a responsive navigation system with dropdowns, 
-          smooth animations, and a mobile-friendly hamburger menu. Scroll down to see the sticky header effect.
-        </p>
-        <div style={{ height: '150vh' }}></div>
-      </div>
     </>
-  );
-};
-
-
+  )
+}
