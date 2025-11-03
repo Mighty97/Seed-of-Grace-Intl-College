@@ -28,8 +28,8 @@ export function Header() {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo-section">
-            <div className="logo">ES</div>
-            <span className="brand-name">Elite School</span>
+            <img className="logo" src="/images/logo.png" alt="" />
+            <span className="brand-name">Seed of Grace</span>
           </div>
 
           <button 
