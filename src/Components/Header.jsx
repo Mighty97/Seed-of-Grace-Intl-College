@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css'
 
-export function Header () {
+export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
