@@ -7,6 +7,7 @@ import { Staff } from "./Staff";
 import { AwardT } from "./Award";
 import { Video } from './Video'
 import { ScrollToTop } from "../../Components/ScrollToTop";
+import { Footer } from "../../Components/Footer";
 
 export function HomePage() {
   return (
@@ -20,6 +21,7 @@ export function HomePage() {
       <AwardT />
       <Video />
       <ScrollToTop />
+      <Footer />
     </>
   )
 }
