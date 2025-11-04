@@ -132,7 +132,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Footer Bottm */}
+
           <div className="footer-bottom">
             <div className="copyright">
               <span>© 2025 Seed of Grace International College.</span>

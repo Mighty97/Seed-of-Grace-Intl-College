@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Header.css'
+import { Link } from 'react-router';
+import './Header.css';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,14 +26,13 @@ export function Header() {
 
   return (
     <>
+      
+
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo-section">
-            <img className="logo" src="/images/logo.png" alt="" />
-            <div className='brand-info' >
+            <div className="logo">ES</div>
             <span className="brand-name">Seed of Grace</span>
-            <span className="brand-tagline">International College</span>
-            </div>
           </div>
 
           <button 
@@ -40,13 +40,13 @@ export function Header() {
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? '✕' : '☰' }
+            {isMobileMenuOpen ? '✕' : '☰'}
           </button>
 
           <nav className={`nav-container ${isMobileMenuOpen ? 'open' : ''}`}>
             <ul className="nav-menu">
               <li className="nav-item">
-                <a href="#home" className="nav-link">Home</a>
+                <Link to="/" className="nav-link">Home</Link>
               </li>
 
               <li className="nav-item">
@@ -115,6 +115,9 @@ export function Header() {
           </nav>
         </div>
       </header>
+
     </>
   );
 };
+
+

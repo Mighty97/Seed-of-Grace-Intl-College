@@ -1,5 +1,5 @@
 import React from 'react';
-import PrincipalImage from '../../../public/images/principal.jpg'
+import PrincipalImage from '../../assets/images/principal.jpg'
 import './Principal.css'
 
 export function Principal() {
