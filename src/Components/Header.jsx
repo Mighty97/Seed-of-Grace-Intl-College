@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
+import Logo from '../assets/images/logo.png'
 import './Header.css';
 
 export function Header() {
@@ -31,8 +32,11 @@ export function Header() {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo-section">
-            <div className="logo">ES</div>
-            <span className="brand-name">Seed of Grace</span>
+            <img className="logo" src={Logo} alt="" />
+            <div className='brand-info' >
+              <span className="brand-name">Seed of Grace</span>
+              <span className="brand-name-two">International College</span>
+            </div>
           </div>
 
           <button 
