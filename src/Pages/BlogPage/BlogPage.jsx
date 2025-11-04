@@ -353,7 +353,7 @@ export function BlogPage() {
           </div>
         </div>
       </div>
-      <Footer />
+    
       <Footer />
     </>
   );

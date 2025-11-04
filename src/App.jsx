@@ -5,6 +5,7 @@ import { CurriculumPage } from './Pages/CurriculumPage/CurriculumPage'
 import { AdmissionPage } from './Pages/AdmissionPage/AdmissionPage'
 import { ContactPage } from './Pages/ContactPage/ContactPage'
 import { GalleryPage } from './Pages/GalleryPage/GalleryPage'
+import { BlogPage } from './Pages/BlogPage/BlogPage'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='curriculum' element={<CurriculumPage />} />
         <Route path='admission' element={<AdmissionPage />} />
         <Route path='gallery' element={<GalleryPage />} />
+        <Route path='blog' element={<BlogPage />} />
         <Route path='contact' element={<ContactPage />} />
       </Routes>
     </>
