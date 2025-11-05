@@ -8,6 +8,7 @@ import { AwardT } from "./Award";
 import { Video } from './Video'
 import { ScrollToTop } from "../../Components/ScrollToTop";
 import { Footer } from "../../Components/Footer";
+import { LogoScroll } from "./Edupartner";
 
 export function HomePage() {
   return (
@@ -17,10 +18,11 @@ export function HomePage() {
       <Typewriter />
       <Principal />
       <Vision />
-      <Staff />
       <AwardT />
+      <Staff />
       <Video />
       <ScrollToTop />
+      <LogoScroll />
       <Footer />
     </>
   )
