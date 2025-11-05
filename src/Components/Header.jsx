@@ -59,7 +59,7 @@ export function Header() {
                 <div 
                   className="nav-link" 
                   onClick={() => toggleDropdown('about')}
-                >
+                >About Us
                   <span className={`dropdown-icon ${openDropdown === 'about' ? 'open' : ''}`}>▼</span>
                 </div>
                 <div className={`dropdown-menu ${openDropdown === 'about' ? 'open' : ''}`}>
