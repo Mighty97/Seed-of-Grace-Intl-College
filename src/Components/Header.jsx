@@ -32,7 +32,8 @@ export function Header() {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           <div className="logo-section">
-            <img className="logo" src={Logo} alt="" />
+            <Link to='/' ><img className="logo" src={Logo} alt="" /></Link>
+            
             <div className='brand-info' >
               <span className="brand-name">Seed of Grace</span>
               <span className="brand-name-two">International College</span>
@@ -54,11 +55,11 @@ export function Header() {
               </li>
 
               <li className="nav-item">
+               
                 <div 
                   className="nav-link" 
                   onClick={() => toggleDropdown('about')}
                 >
-                  About Us
                   <span className={`dropdown-icon ${openDropdown === 'about' ? 'open' : ''}`}>▼</span>
                 </div>
                 <div className={`dropdown-menu ${openDropdown === 'about' ? 'open' : ''}`}>
