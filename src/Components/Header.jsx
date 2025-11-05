@@ -54,14 +54,13 @@ export function Header() {
                 <Link to="/" className="nav-link">Home</Link>
               </li>
 
-              <li className="nav-item">
-               
+              <li className="nav-item"><Link to='/about' >
                 <div 
                   className="nav-link" 
                   onClick={() => toggleDropdown('about')}
                 >About Us
                   <span className={`dropdown-icon ${openDropdown === 'about' ? 'open' : ''}`}>▼</span>
-                </div>
+                </div></Link>
                 <div className={`dropdown-menu ${openDropdown === 'about' ? 'open' : ''}`}>
                   <a href="#school-facility" className="dropdown-item">School Facility</a>
                   <a href="#founder-message" className="dropdown-item">Founder/Chairman Message</a>
@@ -69,27 +68,27 @@ export function Header() {
                 </div>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item"><Link to='curriculum' >
                 <div 
                   className="nav-link" 
                   onClick={() => toggleDropdown('curriculum')}
                 >
                   Curriculum
                   <span className={`dropdown-icon ${openDropdown === 'curriculum' ? 'open' : ''}`}>▼</span>
-                </div>
+                </div></Link>
                 <div className={`dropdown-menu ${openDropdown === 'curriculum' ? 'open' : ''}`}>
                   <a href="#co-curricular" className="dropdown-item">Co-Curricular</a>
                 </div>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item"><Link to='/admission'>
                 <div 
                   className="nav-link" 
                   onClick={() => toggleDropdown('admission')}
                 >
                   Admission
                   <span className={`dropdown-icon ${openDropdown === 'admission' ? 'open' : ''}`}>▼</span>
-                </div>
+                </div></Link>
                 <div className={`dropdown-menu ${openDropdown === 'admission' ? 'open' : ''}`}>
                   <a href="#admission-criteria" className="dropdown-item">Admission Criteria</a>
                   <a href="#application-form" className="dropdown-item">Application Form</a>
@@ -97,25 +96,25 @@ export function Header() {
               </li>
 
               <li className="nav-item">
-                <a href="#e-portal" className="nav-link">E-Portal</a>
+                <Link to="/portal" className="nav-link">E-Portal</Link>
               </li>
 
               <li className="nav-item">
-                <a href="#blog" className="nav-link">Blog</a>
+                <Link to="/blog" className="nav-link">Blog</Link>
               </li>
 
               <li className="nav-item">
-                <a href="#gallery" className="nav-link">Gallery</a>
+                <Link to="/gallery" className="nav-link">Gallery</Link>
               </li>
 
               <li className="nav-item">
-                <a href="#contact" className="nav-link">Contact</a>
+                <Link to="/contact" className="nav-link">Contact</Link>
               </li>
             </ul>
 
             <div className="header-buttons">
-              <a href="#apply" className="btn btn-primary">Apply Now</a>
-              <a href="#portal" className="btn btn-secondary">E-Portal</a>
+              <Link to="/admission" className="btn btn-primary">Apply Now</Link>
+              <Link to="/portal" className="btn btn-secondary">E-Portal</Link>
             </div>
           </nav>
         </div>
