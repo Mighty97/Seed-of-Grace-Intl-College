@@ -1,5 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { Mail, Phone, Linkedin } from 'lucide-react';
+import Staff1 from '../../assets/images/staff001.jpg'
+import Staff2 from '../../assets/images/staff002.jpg'
+import Staff3 from '../../assets/images/staff003.jpg'
+import Staff4 from '../../assets/images/staff004.jpg'
+import Staff5 from '../../assets/images/staff005.jpg'
+import Staff6 from '../../assets/images/staff006.jpg'
+import Staff7 from '../../assets/images/staff007.jpg'
+import Staff8 from '../../assets/images/staff008.jpg'
+import Staff9 from '../../assets/images/staff009.jpg'
+import Staff10 from '../../assets/images/staff010.jpg'
+import Staff11 from '../../assets/images/staff011.jpg'
 import './Staff.css'
 
 export function Staff() {
@@ -30,26 +41,26 @@ export function Staff() {
   const mainStaff = [
     {
       id: 1,
-      name: "Dr. Sarah Johnson",
-      position: "Principal & Director",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop",
-      email: "sarah.j@school.com",
+      name: "Mr Oluwaseun Kuforiji",
+      position: "College Accountant",
+      image: Staff6,
+      email: "seun@sgic.com",
       phone: "+1 234 567 8900"
     },
     {
       id: 2,
-      name: "Prof. Michael Chen",
-      position: "Head of Academics",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
-      email: "michael.c@school.com",
+      name: "Pst. Mayowa Olubude",
+      position: "Principal",
+      image: Staff11,
+      email: "principal@sgic.com",
       phone: "+1 234 567 8901"
     },
     {
       id: 3,
-      name: "Dr. Emily Rodriguez",
-      position: "Dean of Students",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop",
-      email: "emily.r@school.com",
+      name: "Mr Peter Obaaro",
+      position: "Director of Works",
+      image: Staff8,
+      email: "peter@sgic.com",
       phone: "+1 234 567 8902"
     }
   ];
@@ -57,43 +68,43 @@ export function Staff() {
   const otherStaff = [
     {
       id: 4,
-      name: "James Wilson",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop"
+      name: "Miss Rhoda",
+      image: Staff2
     },
     {
       id: 5,
-      name: "Maria Garcia",
-      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop"
+      name: "Mr Felix Adebayo",
+      image: Staff4
     },
     {
       id: 6,
-      name: "David Lee",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop"
+      name: "Mrs. Tosin Olubude",
+      image: Staff1
     },
     {
       id: 7,
-      name: "Sophie Martin",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop"
+      name: "Mr Bamidele Obende",
+      image: Staff3
     },
     {
       id: 8,
-      name: "Robert Taylor",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop"
+      name: "Mrs. Funmilayo Ayo-Dada",
+      image: Staff5
     },
     {
       id: 9,
-      name: "Amanda White",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop"
+      name: "Mr David Odewoye",
+      image: Staff7
     },
     {
       id: 10,
-      name: "Chris Brown",
-      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop"
+      name: "Miss Faith Olajide",
+      image: Staff9
     },
     {
       id: 11,
-      name: "Lisa Anderson",
-      image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop"
+      name: "Mr Olusola Awolusi",
+      image: Staff10
     }
   ];
 

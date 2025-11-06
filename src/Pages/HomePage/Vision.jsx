@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AchieverImage from '../../assets/images/achiever2.jpg'
 import './Vision.css'
 
 export function Vision() {
@@ -96,18 +97,17 @@ export function Vision() {
           <div className="column student-column">
             <div className="student-image-wrapper">
               <div className="student-badge">⭐ STAR STUDENT</div>
-              <div className="student-image">👩‍🎓</div>
+              <img className="student-image" src={AchieverImage} alt="" />
             </div>
             <div className="student-info">
-              <div className="student-label">Student of the Week</div>
-              <h3 className="student-name">Sarah Johnson</h3>
-              <p className="student-class">Grade 10A - Science Stream</p>
+              <div className="student-label">A recent achiever</div>
+              <h3 className="student-name">Rufus Joshua</h3>
+              <p className="student-class">24/25 set - Science Department</p>
               <p className="student-description">
-                Sarah has demonstrated exceptional dedication to her studies and exemplary 
-                leadership qualities. Her outstanding performance in the recent science 
-                competition and her tireless work as class representative have made her 
-                a role model for her peers. She consistently goes above and beyond in helping 
-                her classmates and contributing to school activities.
+                Joshua has demonstrated exceptional dedication to his studies and exemplary 
+                leadership qualities. His outstanding performance in the 2025 UTME with score of 300+ and his tireless work as class representative have made him 
+                a role model for his peers. He consistently goes above and beyond in helping 
+                his classmates and contributing to school activities.
               </p>
               <div className="student-achievements">
                 <span className="achievement-badge">🏅 Top Performer</span>
