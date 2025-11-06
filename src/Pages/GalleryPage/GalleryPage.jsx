@@ -111,7 +111,7 @@ export function GalleryPage() {
 
   return (
     <>
-    <Title>SGIC | School Gallery</Title>
+    <title>SGIC | School Gallery</title>
      <Header />
 
       <div className="gallery-page">

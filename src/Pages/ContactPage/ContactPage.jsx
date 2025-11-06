@@ -79,7 +79,7 @@ export function ContactPage() {
 
   return (
     <>
-     <Title>SGIC | Contact Us</Title>
+     <title>SGIC | Contact Us</title>
 <Header />
 
       <div className="contact-page">
