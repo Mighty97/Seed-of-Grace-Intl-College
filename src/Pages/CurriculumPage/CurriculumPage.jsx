@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Header } from '../../Components/Header';
+import { Footer } from '../../Components/Footer'
 import './CurriculumPage.css'
 
 export function CurriculumPage() {
@@ -118,7 +120,7 @@ export function CurriculumPage() {
 
   return (
     <>
-     
+     <Header />
       <div className="curriculum-page">
         {/* Hero Section */}
         <section className="curriculum-hero">
@@ -289,6 +291,7 @@ export function CurriculumPage() {
           </section>
         )}
       </div>
+      <Footer />
     </>
   );
 };

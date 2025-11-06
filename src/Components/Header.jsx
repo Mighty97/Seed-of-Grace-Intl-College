@@ -68,7 +68,7 @@ export function Header() {
                 </div>
               </li>
 
-              <li className="nav-item"><Link to='curriculum' >
+              <li className="nav-item"><Link to='/curriculum' >
                 <div 
                   className="nav-link" 
                   onClick={() => toggleDropdown('curriculum')}
