@@ -24,7 +24,7 @@ export function Footer() {
   ];
 
   const academics = [
-    { name: 'Primary School', url: '#primary' },
+    { name: 'School Hostel', url: '#primary' },
     { name: 'Secondary School', url: '#secondary' },
     { name: 'Curriculum', url: '#curriculum' },
     { name: 'Extracurricular', url: '#extracurricular' },
@@ -57,7 +57,7 @@ export function Footer() {
                 <div className="footer-contact-info">
                   <div className="contact-item">
                     <MapPin size={18} className="contact-icon" />
-                    <span>123 Education Street, Learning District</span>
+                    <span>Km 4 Afao Road, Ado-Ekiti, Ekiti State, Nigeria</span>
                   </div>
                   <div className="contact-item">
                     <Phone size={18} className="contact-icon" />
