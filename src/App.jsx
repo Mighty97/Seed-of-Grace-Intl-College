@@ -14,13 +14,13 @@ function App() {
     <>
        <Routes>
         <Route path='/' element={<HomePage />}  />
-        <Route path='about' element={<AboutPage />} />
-        <Route path='curriculum' element={<CurriculumPage />} />
-        <Route path='admission' element={<AdmissionPage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/curriculum' element={<CurriculumPage />} />
+        <Route path='/admission' element={<AdmissionPage />} />
         <Route path='/portal' element={<Portal />} />
-        <Route path='gallery' element={<GalleryPage />} />
-        <Route path='blog' element={<BlogPage />} />
-        <Route path='contact' element={<ContactPage />} />
+        <Route path='/gallery' element={<GalleryPage />} />
+        <Route path='/blog' element={<BlogPage />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
     </>
   )

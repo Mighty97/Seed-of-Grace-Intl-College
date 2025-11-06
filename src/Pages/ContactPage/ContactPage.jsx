@@ -79,8 +79,9 @@ export function ContactPage() {
 
   return (
     <>
-     
+     <Title>SGIC | Contact Us</Title>
 <Header />
+
       <div className="contact-page">
         {/* Hero Section */}
         <section className="contact-hero">
