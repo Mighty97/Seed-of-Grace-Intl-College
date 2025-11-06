@@ -3,6 +3,7 @@ import {
   Facebook, Twitter, Instagram, Linkedin, Youtube, 
   Mail, Phone, MapPin, ArrowRight, Heart 
 } from 'lucide-react';
+import Logo from '../assets/images/logo.png'
 import './Footer.css'
 
 export function Footer() {
@@ -41,7 +42,8 @@ export function Footer() {
               {/* About Section */}
               <div className="footer-about">
                 <div className="footer-logo">
-                  <div className="logo-icon">S</div>
+                
+                  <img className="logo-icon" src={Logo} alt="" />
                   <div className="logo-text">
                     <span className="logo-name">Seed of Grace</span>
                     <span className="logo-subtitle">International College</span>

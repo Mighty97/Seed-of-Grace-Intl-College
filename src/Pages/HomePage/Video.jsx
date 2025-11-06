@@ -22,18 +22,6 @@ export function Video() {
       title: "Tips for Effective Study Habits and Time Management",
       date: "October 20, 2025",
       category: "Education"
-    },
-    {
-      id: 4,
-      title: "Annual Sports Day: A Day of Excellence and Team Spirit",
-      date: "October 15, 2025",
-      category: "Events"
-    },
-    {
-      id: 5,
-      title: "How to Support Your Child's Learning at Home",
-      date: "October 10, 2025",
-      category: "Parent Resources"
     }
   ];
 
@@ -51,20 +39,6 @@ export function Video() {
       date: "November 22, 2025",
       time: "2:00 PM",
       location: "School Auditorium"
-    },
-    {
-      id: 3,
-      title: "STEM Fair & Exhibition",
-      date: "December 5, 2025",
-      time: "10:00 AM - 3:00 PM",
-      location: "Science Laboratory"
-    },
-    {
-      id: 4,
-      title: "End of Term Awards Ceremony",
-      date: "December 18, 2025",
-      time: "11:00 AM",
-      location: "Main Hall"
     }
   ];
 
