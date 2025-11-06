@@ -123,6 +123,7 @@ export function AdmissionPage() {
   return (
     <>
    <Header />
+   <Title>SGIC | 2025/2026 academic admission is on!!!</Title>
       <div className="admission-page">
         {/* Hero Section */}
         <section className="admission-hero">

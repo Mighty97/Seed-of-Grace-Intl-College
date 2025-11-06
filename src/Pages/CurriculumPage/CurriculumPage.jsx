@@ -120,6 +120,7 @@ export function CurriculumPage() {
 
   return (
     <>
+    <Title>SGIC | Curriculum</Title>
      <Header />
       <div className="curriculum-page">
         {/* Hero Section */}
