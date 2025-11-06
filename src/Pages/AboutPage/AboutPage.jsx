@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Header } from '../../Components/Header'
 import { Footer } from '../../components/Footer'
+import { Typewriter } from '../../Components/Typewriter'
 import './AboutPage.css'
 
 export function AboutPage() {
@@ -74,7 +75,9 @@ export function AboutPage() {
 
   return (
     <>
+    <title>SGIC | About Us</title>
      <Header />
+     
       <div className="about-page">
         {/* Hero Section */}
         <section className="about-hero">
@@ -89,7 +92,7 @@ export function AboutPage() {
             </p>
           </div>
         </section>
-
+        <Typewriter />
         {/* Navigation Tabs */}
         <nav className="page-nav">
           <div className="nav-container">
@@ -166,7 +169,7 @@ export function AboutPage() {
                   <div className="leader-image">👨‍💼</div>
                 </div>
                 <div className="leader-content">
-                  <h3 className="leader-name">Rev. Dr. Emmanuel Adeoye</h3>
+                  <h3 className="leader-name">Dr. John Idowu</h3>
                   <p className="leader-title">Founder & Visionary</p>
                   <p className="leader-speech">
                     "When I founded SGIC, my vision was clear: to create an institution 
@@ -193,7 +196,7 @@ export function AboutPage() {
                   <div className="leader-image">👨‍💼</div>
                 </div>
                 <div className="leader-content">
-                  <h3 className="leader-name">Chief Oluwaseun Balogun</h3>
+                  <h3 className="leader-name">Rev'd (Mrs) Mary Idowu</h3>
                   <p className="leader-title">Chairman, Board of Trustees</p>
                   <p className="leader-speech">
                     "As Chairman of SGIC, I am privileged to work with an exceptional 

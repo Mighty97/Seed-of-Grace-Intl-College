@@ -13,6 +13,7 @@ import { LogoScroll } from "./Edupartner";
 export function HomePage() {
   return (
     <>
+      <title>Welcome | Seed of Grace International College</title>
       <Header />
       <Carousel />
       <Typewriter />
