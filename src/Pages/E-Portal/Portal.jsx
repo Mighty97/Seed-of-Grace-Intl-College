@@ -8,7 +8,7 @@ export function Portal() {
     <>
     <title>SGIC | School E-Portal</title>
       <Header />
-      {/* <iframe src='//schoolviewers.com/3275/portal' style='width:100%;height:560px;border:1px solid #bbb;border-radius:3px;'></iframe> */}
+      <iframe src='//schoolviewers.com/3275/portal' style='width:100%;height:560px;border:1px solid #bbb;border-radius:3px;'></iframe> 
       <Footer />
     </>
   )
