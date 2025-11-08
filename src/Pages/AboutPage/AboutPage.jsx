@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from '../../Components/Header'
-import { Footer } from '../../components/Footer'
+import { Footer } from '../../Components/Footer'
 import { Typewriter } from '../../Components/Typewriter'
 import './AboutPage.css'
 
