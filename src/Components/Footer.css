@@ -5,7 +5,7 @@
           position: relative;
           overflow: hidden;
         }
-
+#453501
         .footer::before {
           content: '';
           position: absolute;
@@ -129,7 +129,7 @@
           left: 0;
           width: 50px;
           height: 3px;
-          background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #d4af37 0%, #655621 100%);
           border-radius: 2px;
         }
 
@@ -222,7 +222,7 @@
 
         .newsletter-btn {
           padding: 1rem 2rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #d4af37 0%, #655621 100%);
           color: white;
           border: none;
           border-radius: 10px;
