@@ -5,11 +5,4 @@
           box-sizing: border-box;
         }
 
-       ::-webkit-scrollbar {
-              display: none;
-       }
-
-       body { 
-       -ms-overflow-style: none;
-       scrollbar-width: none;
-       }
+    
