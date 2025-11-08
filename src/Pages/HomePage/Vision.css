@@ -227,7 +227,7 @@
 
         .student-image {
           width: 100%;
-          height: 280px;
+          height: 100%;
           overflow: hidden;
           background: #ffffff;
           display: flex;
@@ -347,14 +347,14 @@
           }
 
           .student-image {
-            width: 130px;
-            height: 130px;
+            width: 100%;
+            height: 100%;
             font-size: 4rem;
           }
 
           .student-name {
             font-size: 1.5rem;
-          }
+          
         }
 
         @media (max-width: 480px) {
@@ -380,8 +380,8 @@
           }
 
           .student-image {
-            width: 110px;
-            height: 110px;
+            width: 100%;
+            height: 100%;
             font-size: 3.5rem;
           }
 
